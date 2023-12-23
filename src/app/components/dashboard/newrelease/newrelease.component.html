@@ -1,0 +1,11 @@
+<div class="carouselContainer">
+  <div class="carouselHolder">
+    <carousel [isAnimated]="true">
+      <slide
+        *ngFor="let thumbnail of newReleaseRadarThumbanails; let i = index"
+      >
+        <img [src]="thumbnail" alt="first slide" class="thumbnailStyle" />
+      </slide>
+    </carousel>
+  </div>
+</div>

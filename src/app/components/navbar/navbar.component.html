@@ -1,0 +1,37 @@
+<!-- app.component.html -->
+<div id="navbar-animmenu" #navbaranimmenu>
+  <ul class="show-dropdown main-navbar">
+    <div class="hori-selector">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <li
+      *ngFor="let item of menuItems; let i = index"
+      (click)="selectItem(item)"
+      [ngClass]="{ active: item == selectedMenuItem }"
+    >
+      <a href="javascript:void(0);">
+        {{ item }}
+      </a>
+    </li>
+    <div class="switch" (click)="playPauseAudio()">
+      <input type="checkbox" name="toggle" />
+      <label for="toggle">
+        <i class="bulb">
+          <span class="bulb-center"></span>
+          <span class="filament-1"></span>
+          <span class="filament-2"></span>
+          <span class="reflections">
+            <span></span>
+          </span>
+          <span class="sparks">
+            <i class="spark1"></i>
+            <i class="spark2"></i>
+            <i class="spark3"></i>
+            <i class="spark4"></i>
+          </span>
+        </i>
+      </label>
+    </div>
+  </ul>
+</div>

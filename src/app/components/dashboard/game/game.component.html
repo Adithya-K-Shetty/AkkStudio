@@ -1,0 +1,62 @@
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+    <div *ngFor="let game of gameData" class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <!-- <div class="ag-courses-item_title">
+          UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+        </div> -->
+        <img
+          [src]="game.gameThumbnail"
+          width="128px"
+          height="128px"
+          class="gameIconStyle"
+          alt=""
+        />
+        <div class="downloadPlatformContainer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            fill="currentColor"
+            class="bi bi-windows winIcon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            fill="currentColor"
+            class="bi bi-android andIcon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.94 8.94 0 0 1 8 5a8.94 8.94 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-browser-chrome chIcon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+            />
+          </svg>
+        </div>
+        <div class="ag-courses-item_date-box">
+          <span class="ag-courses-item_date">{{ game.gameName }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

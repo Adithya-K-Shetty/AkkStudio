@@ -1,0 +1,14 @@
+.carouselContainer {
+  background-color: #0f0f0f;
+}
+.carouselHolder {
+  width: 50% !important;
+  margin: auto;
+}
+.thumbnailStyle {
+  display: block;
+  width: 100%;
+  border: 1px solid #0f0f0f;
+  border-radius: 20px;
+  margin: 20px 0px;
+}
